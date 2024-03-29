@@ -32,6 +32,8 @@ h1{
     width: fit-content;
     height: fit-content;
     font-size: 4em;
+    font-family: 'Roboto';
+    font-weight: bold;
 }
 #div-01{
     position: absolute;
