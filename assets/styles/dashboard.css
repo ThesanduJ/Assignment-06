@@ -1,0 +1,67 @@
+body{
+    overflow: hidden;
+}
+header{
+    position: relative;
+    width: 100vw;
+    height: 13vh;
+    background-color:rgb(217, 217, 217);
+}
+#btnExit{
+    position: absolute;
+    top: 0;
+    right: 1vh;
+    bottom: 0;
+    margin: auto;
+}
+#btnExit:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+h1{
+    position: absolute;
+    margin: auto;
+    top: 9vh;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 4em;
+}
+#div-01{
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+#btnCustomer{
+    margin-right: 10vw;
+}
+#btnItems{
+    margin-right: 10vw;
+}
+#btnView{
+    margin-right: 10vw;
+}
+
+
+#btnCustomer:hover{
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+}
+#btnItems:hover{
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+}
+#btnView:hover{
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+}
+#btnPlaceOrder:hover{
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+}
