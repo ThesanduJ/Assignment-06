@@ -1,6 +1,98 @@
-body{
+
+section{
+    position: relative;
     background-image: url("https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    background-position:center ;
 }
+section>div{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 40%;
+}
+.div-01{
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000000;
+    opacity: 70%;
+    border-radius: 3%;
+}
+h1{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 3em;
+    width: fit-content;
+    height: fit-content;
+    color: #ffffff;
+}
+.pw{
+    position: absolute;
+    /*top: 0;*/
+    bottom: 28vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 19vw;
+    height: 4vh;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border-color: transparent transparent white transparent ;
+}
+.user{
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 19vw;
+    height: 4vh;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border-color: transparent transparent white transparent ;
+}
+
+::placeholder{
+    color: darkgrey;
+}
+#btnLogin{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    bottom: 10vh;
+    left: 10vw;
+
+}
+#btnLogin:hover{
+    background-color:rgb(99, 255, 138) ;
+    color: black;
+    border-color: rgb(99, 255, 138);
+}
+#btnUser{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    bottom: 10vh;
+    right: 10vw;
+}
+#btnUser:hover{
+    background-color:rgb(99, 255, 138) ;
+    color: black;
+    border-color: rgb(99, 255, 138);
+}
+
