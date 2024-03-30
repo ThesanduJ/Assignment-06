@@ -22,6 +22,9 @@ section>h1{
     font-size: 2.9em;
     width: fit-content;
     height: fit-content;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .user{
     position: absolute;
@@ -30,7 +33,10 @@ section>h1{
     top: 16vh;
     margin: auto;
     right: 9vw;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    color: black;
+    background-color: transparent;
+    border-color: transparent transparent black transparent ;
 }
 .pw{
     position: absolute;
@@ -39,7 +45,10 @@ section>h1{
     top: 25vh;
     margin: auto;
     right: 9vw;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    color: black;
+    background-color: transparent;
+    border-color: transparent transparent black transparent ;
 }
 .email{
     position: absolute;
@@ -48,7 +57,10 @@ section>h1{
     top: 34vh;
     margin: auto;
     right: 9vw;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    color: black;
+    background-color: transparent;
+    border-color: transparent transparent black transparent ;
 }
 #createAccount{
     position: absolute;
@@ -57,4 +69,10 @@ section>h1{
     top: 44vh;
     margin: auto;
     right: 15vw;
+}
+#createAccount:hover{
+    background-color:rgb(99, 255, 138) ;
+    border-color: rgb(99, 255, 138);
+    color: black;
+
 }

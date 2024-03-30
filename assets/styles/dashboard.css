@@ -32,8 +32,9 @@ h1{
     width: fit-content;
     height: fit-content;
     font-size: 4em;
-    font-family: 'Roboto';
-    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 #div-01{
     position: absolute;
