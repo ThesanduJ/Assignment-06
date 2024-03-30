@@ -1,0 +1,73 @@
+header{
+    position: relative;
+    width: 100vw;
+    height: 13vh;
+    background-color:rgb(217, 217, 217);
+}
+#btnExit{
+    position: absolute;
+    top: 0;
+    right: 1vh;
+    bottom: 0;
+    margin: auto;
+}
+section{
+    position: relative;
+}
+.div-01{
+    position: absolute;
+    top:5vh;
+    width: fit-content;
+    height: fit-content;
+    left: 4vw;
+}
+.div-01>ul>li>button{
+    width: 11vw;
+    height: 4vh;
+    font-size: 1.0em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    border: black 2px solid;
+    color: black;
+    text-align: center;
+}
+#customer{
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right-color: transparent;
+}
+#item{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right-color: transparent;
+}
+#view{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right-color: transparent;
+}
+#placeOrder{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+}
+h1{
+    position: absolute;
+    margin: auto;
+    top: 14vh;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
