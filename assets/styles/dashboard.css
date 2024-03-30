@@ -56,15 +56,15 @@ h1{
 }
 
 
-#btnCustomer:hover{
-    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+#btnCustomer:hover,#div-02>label{
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
 #btnItems:hover{
-    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
 #btnView:hover{
-    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
 #btnPlaceOrder:hover{
-    box-shadow: rgb(49, 184, 249) 0px 22px 70px 4px;
+    box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
