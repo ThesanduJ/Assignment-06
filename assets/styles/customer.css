@@ -71,3 +71,30 @@ h1{
     font-weight: 500;
     font-style: normal;
 }
+.div-02{
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 30vh;
+}
+.div-02>input{
+    position: absolute;
+    width: 50vw;
+    height: 6.5vh;
+    right: 30vw;
+    margin: auto;
+}
+#btnSearch{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    right: 23vw;
+    margin: auto;
+}
+#btnSearch:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
