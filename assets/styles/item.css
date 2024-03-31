@@ -58,3 +58,16 @@ section{
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
 }
+h1{
+    position: absolute;
+    margin: auto;
+    top: 14vh;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
