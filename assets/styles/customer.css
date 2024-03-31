@@ -133,3 +133,17 @@ td{
 #btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+#btnAdd{
+    position: absolute;
+    width: 6vw;
+    top: 30vh;
+    height: 6.8vh;
+    right: 14vw;
+    margin: auto;
+    font-size: 1.3em;
+}
+#btnAdd:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
