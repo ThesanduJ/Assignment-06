@@ -130,3 +130,6 @@ td{
     border-color: rgb(99, 255, 138);
     color: black;
 }
+#btnExit:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
