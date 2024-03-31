@@ -88,9 +88,9 @@ h1{
 }
 #btnSearch{
     position: absolute;
-    width: fit-content;
-    height: fit-content;
-    right: 23vw;
+    width: 10vw;
+    height: 7.0vh;
+    right: 17vw;
     margin: auto;
 }
 #btnSearch:hover{
@@ -137,8 +137,8 @@ td{
     position: absolute;
     width: 6vw;
     top: 30vh;
-    height: 6.8vh;
-    right: 14vw;
+    height: 7.0vh;
+    right: 8vw;
     margin: auto;
     font-size: 1.3em;
 }
@@ -147,3 +147,7 @@ td{
     border-color: rgb(99, 255, 138);
     color: black;
 }
+.img-01{
+    display: inline;
+}
+
