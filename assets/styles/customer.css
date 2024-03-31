@@ -98,3 +98,35 @@ h1{
     border-color: rgb(99, 255, 138);
     color: black;
 }
+table{
+    position: absolute;
+    top: 41vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid black;
+    width: 70vw;
+    height: 5vh;
+}
+th{
+    width: 30vw;
+    height: 10vh;
+    border: black 2px solid;
+    text-align: center;
+}
+td{
+    width: 30vw;
+    text-align: center;
+    height: 10vh;
+    border: black 1px solid;
+
+}
+#btnUpdate,#btDelete{
+    width: fit-content;
+    height: 5vh;
+}
+#btnUpdate:hover,#btDelete:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
