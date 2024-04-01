@@ -86,3 +86,73 @@ h1{
     right: 30vw;
     margin: auto;
 }
+#btnSearch{
+    position: absolute;
+    width: 10vw;
+    height: 7.0vh;
+    right: 17vw;
+    margin: auto;
+}
+#btnSearch:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
+table{
+    position: absolute;
+    top: 41vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid black;
+    width: 70vw;
+    height: 5vh;
+}
+th{
+    width: 30vw;
+    height: 10vh;
+    border: black 2px solid;
+    text-align: center;
+}
+td{
+    color: black;
+    width: 30vw;
+    text-align: center;
+    height: 10vh;
+    border: black 1px solid;
+
+}
+#btnUpdate,#btDelete{
+    width: fit-content;
+    height: 5vh;
+}
+#btDelete{
+    background-color: rgb(220, 53, 69);
+    border-color: rgb(220, 53, 69);
+}
+
+#btnUpdate:hover,#btDelete:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
+#btnExit:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#btnAdd{
+    position: absolute;
+    width: 6vw;
+    top: 30vh;
+    height: 7.0vh;
+    right: 8vw;
+    margin: auto;
+    font-size: 1.3em;
+}
+#btnAdd:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
+.img-01{
+    display: inline;
+}
