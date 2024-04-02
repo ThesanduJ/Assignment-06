@@ -79,8 +79,9 @@ h1{
     top: 27vh;
     left: 10vw;
     text-align: center;
+    border-radius: 10px;
 }
-.div-03{
+.div-03,.div-05{
     position: absolute;
     width: fit-content;
     height: fit-content;
@@ -104,8 +105,4 @@ h1{
     background-color:rgb(13, 110, 253) ;
     color: white;
     border-radius: 10px;
-}
-.div-02>label,input{
-    width: 20vw;
-    height: fit-content;
 }
