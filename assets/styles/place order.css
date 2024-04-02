@@ -95,7 +95,7 @@ h1{
     font-style: normal;
     margin: auto;
 }
-#h5{
+.h5{
     position: absolute;
     width: 14vw;
     height: fit-content;
@@ -105,4 +105,16 @@ h1{
     background-color:rgb(13, 110, 253) ;
     color: white;
     border-radius: 10px;
+}
+
+.div-02>label,input{
+    width: 20vw;
+    height: fit-content;
+    top: 27vh;
+}
+.div-03>label{
+    position: absolute;
+    left: 0;
+    height: fit-content;
+    width: fit-content;
 }
