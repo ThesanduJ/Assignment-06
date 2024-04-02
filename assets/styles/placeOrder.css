@@ -4,3 +4,10 @@ header{
     height: 13vh;
     background-color:rgb(217, 217, 217);
 }
+#btnExit{
+    position: absolute;
+    top: 0;
+    right: 1vh;
+    bottom: 0;
+    margin: auto;
+}
