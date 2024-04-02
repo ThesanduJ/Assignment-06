@@ -11,3 +11,13 @@ header{
     bottom: 0;
     margin: auto;
 }
+section{
+    position: relative;
+}
+.div-01{
+    position: absolute;
+    top:5vh;
+    width: fit-content;
+    height: fit-content;
+    left: 4vw;
+}
