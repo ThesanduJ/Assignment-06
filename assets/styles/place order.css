@@ -11,3 +11,6 @@ header{
     bottom: 0;
     margin: auto;
 }
+section{
+    position: relative;
+}
