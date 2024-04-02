@@ -21,3 +21,40 @@ section{
     height: fit-content;
     left: 4vw;
 }
+.div-01>ul>li>button{
+    width: 11vw;
+    height: 4vh;
+    font-size: 1.0em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    border: black 2px solid;
+    color: black;
+    text-align: center;
+}
+#customer{
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right-color: transparent;
+}
+#item{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right-color: transparent;
+}
+#view{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right-color: transparent;
+}
+#placeOrder{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+}
