@@ -156,4 +156,10 @@ td{
 .img-01{
     display: inline;
 }
+#logo{
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+}
+
 

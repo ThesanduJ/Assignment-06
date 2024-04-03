@@ -76,3 +76,8 @@ section>h1{
     color: black;
 
 }
+#logo{
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+}

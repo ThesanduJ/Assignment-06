@@ -68,3 +68,8 @@ h1{
 #btnPlaceOrder:hover{
     box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
+#logo{
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+}
