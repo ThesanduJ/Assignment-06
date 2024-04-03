@@ -81,7 +81,7 @@ h1{
     text-align: center;
     border-radius: 10px;
 }
-.div-03,.div-05{
+.div-03{
     position: absolute;
     width: fit-content;
     height: fit-content;
@@ -95,7 +95,7 @@ h1{
     font-style: normal;
     margin: auto;
 }
-.h5{
+#h5{
     position: absolute;
     width: 14vw;
     height: fit-content;
@@ -107,8 +107,13 @@ h1{
     border-radius: 10px;
 }
 
-.div-02>label,input{
+.div-02>label{
     width: 20vw;
+    height: fit-content;
+    top: 27vh;
+}
+.inp-01,.inp-02,.inp-03,.inp-04,.inp-05,.inp-06{
+    width: 18vw;
     height: fit-content;
     top: 27vh;
 }
@@ -118,3 +123,47 @@ h1{
     height: fit-content;
     width: fit-content;
 }
+.div-04{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    width: 44vw;
+    height: 39VH;
+    border: black solid 1px;
+    right: 10vw;
+    top: 27vh;
+    border-radius: 10px;
+}
+.lab-01{
+    margin-top: 5vh;
+}
+.lab-01,.lab-02,.lab-03,.inp-04,.inp-05,.inp-06{
+    margin-left:2vw;
+}
+.div-05{
+    width: fit-content;
+    height: fit-content;
+}
+.div-06{
+  position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    margin-right: 2vw;
+}
+#h5-02{
+    position: absolute;
+    width: 14vw;
+    height: fit-content;
+    text-align: center;
+    top: -2vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(13, 110, 253);
+    color: white;
+    border-radius: 10px;
+}
+
