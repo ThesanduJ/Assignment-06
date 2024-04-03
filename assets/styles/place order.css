@@ -170,10 +170,27 @@ h1{
     margin-left: 3vw;
     margin-top: 1vh;
 }
+#btnAdd{
+    width:79px;
+    height:47px;
+    font-size: 18px;
+}
 #btnClear:hover,#btnAdd:hover{
     background-color: rgb(99, 255, 138);
     border-color: rgb(99, 255, 138);
     color: black;
+}
+#model-div{
+    text-align: center;
+    top: 3vh;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+#h1-02{
+    position: absolute;
+    top:0;
+    margin-top: 2vh;
 }
 
 

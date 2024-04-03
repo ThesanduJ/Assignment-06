@@ -79,7 +79,25 @@
             <input class="inp-05" type="text" id="disabledTextInput8" placeholder="" autocomplete="on"><br><br>
 
             <button type="submit" id="btnClear" class="btn btn-primary btn-lg">Clear</button>
-            <button type="submit" id="btnAdd" class="btn btn-primary btn-lg">Add</button>
+<!--            <button type="submit" id="btnAdd" class="btn btn-primary btn-lg">Add</button>-->
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 id="h1-02" class="modal-title fs-5" id="exampleModalToggleLabel">Save Place Order Details</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="model-div" class="modal-body"  >
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/downloading-updates.png" alt="downloading-updates"/>
+                            Save the place Order Details
+                        </div>
+                        <div class="modal-footer" style="border-top-color: transparent">
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="btnAdd" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Add</button>
         </div>
     </div>
 
