@@ -153,7 +153,7 @@ h1{
     right: 0;
     margin-right: 2vw;
 }
-#h5-02{
+#h5-02,#h5-03{
     position: absolute;
     width: 14vw;
     height: fit-content;
