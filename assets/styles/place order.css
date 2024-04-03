@@ -200,6 +200,59 @@ h1{
     margin-left:10vw;
     border: black 1px solid;
     border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#div-10{
+    position: absolute;
+    width: 1vw;
+    height: 1vh;
+    left: 0;
+    bottom: 10vh;
+    margin: auto;
+
+}
+#div-11{
+    position: absolute;
+    width: 1vw;
+    height: 1vh;
+    left: 10vw;
+    bottom: 10vh;
+    margin: auto;
+
 }
 
+#div-12{
+    position: absolute;
+    width: 1vw;
+    height: 1vh;
+    left: 20vw;
+    bottom: 10vh;
+    margin: auto;
+}
 
+#div-13{
+    position: absolute;
+    width: 1vw;
+    height: 1vh;
+    left: 30vw;
+    bottom: 10vh;
+    margin: auto;
+}
+.inp-10,.lab-10{
+    width: 15vw;
+    margin-left: 3vw;
+}
+.inp-11,.lab-11{
+    width: 15vw;
+    margin-left: 13vw;
+}
+.inp-12,.lab-12{
+    width: 15vw;
+    margin-left: 23vw;
+}
+.inp-13,.lab-13{
+    width: 15vw;
+    margin-left: 33vw;
+}
