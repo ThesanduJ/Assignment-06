@@ -166,4 +166,14 @@ h1{
     color: white;
     border-radius: 10px;
 }
+#btnClear,#btnAdd{
+    margin-left: 3vw;
+    margin-top: 1vh;
+}
+#btnClear:hover,#btnAdd:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
+
 
