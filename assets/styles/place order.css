@@ -75,7 +75,7 @@ h1{
     position: absolute;
     border: solid black 1px;
     width: 30vw;
-    height: 39VH;
+    height: 36VH;
     top: 27vh;
     left: 10vw;
     text-align: center;
@@ -129,7 +129,7 @@ h1{
     font-style: normal;
     position: absolute;
     width: 44vw;
-    height: 39VH;
+    height: 36VH;
     border: black solid 1px;
     right: 10vw;
     top: 27vh;
@@ -194,9 +194,9 @@ h1{
 }
 #div-07{
     position: absolute;
-    top: 70vh;
+    top: 67vh;
     width: 80vw;
-    height: 15vh;
+    height: 18vh;
     margin-left:10vw;
     border: black 1px solid;
     border-radius: 10px;
@@ -209,7 +209,7 @@ h1{
     width: 1vw;
     height: 1vh;
     left: 0;
-    bottom: 10vh;
+    bottom: 13vh;
     margin: auto;
 
 }
@@ -218,7 +218,7 @@ h1{
     width: 1vw;
     height: 1vh;
     left: 10vw;
-    bottom: 10vh;
+    bottom: 13vh;
     margin: auto;
 
 }
@@ -228,7 +228,7 @@ h1{
     width: 1vw;
     height: 1vh;
     left: 20vw;
-    bottom: 10vh;
+    bottom: 13vh;
     margin: auto;
 }
 
@@ -237,7 +237,7 @@ h1{
     width: 1vw;
     height: 1vh;
     left: 30vw;
-    bottom: 10vh;
+    bottom: 13vh;
     margin: auto;
 }
 .inp-10,.lab-10{
@@ -255,4 +255,17 @@ h1{
 .inp-13,.lab-13{
     width: 15vw;
     margin-left: 33vw;
+}
+#btnAdd-02{
+    position: absolute;
+    right: 4vw;
+    bottom: 1vh;
+    height: 4.5vh;
+    width:10vw;
+
+}
+#btnAdd-02:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
 }
