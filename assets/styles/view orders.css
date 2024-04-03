@@ -127,3 +127,6 @@ td{
     top: 4vh;
     left: 2vw;
 }
+#btnExit:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
