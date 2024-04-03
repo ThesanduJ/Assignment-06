@@ -269,3 +269,8 @@ h1{
     border-color: rgb(99, 255, 138);
     color: black;
 }
+#logo{
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+}
