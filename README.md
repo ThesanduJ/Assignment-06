@@ -8,4 +8,4 @@ https://drive.google.com/file/d/17zb4rL06-Eq-mQyYyYg8FYhYQHNhIzya/view?usp=shari
 
 <h1>Sitemap</h1>
 
-https://www.gloomaps.com/TqmNCmKJsF
+https://drive.google.com/file/d/1ocWU2zW_-QIfln33dm5_C-p4jbLYWxdS/view?usp=sharing
