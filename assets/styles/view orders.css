@@ -38,13 +38,7 @@ section{
 .div-01>span>form>button:hover{
     color: rgb(32, 154, 237);
 }
-#customer{
-    border-bottom-left-radius: 18px;
-    border-top-left-radius: 18px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-right-color: transparent;
-}
+
 #customer{
     border-bottom-left-radius: 18px;
     border-top-left-radius: 18px;
