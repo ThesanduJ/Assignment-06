@@ -15,8 +15,9 @@
 <body>
 <header>
     <a href="../dashboard/index.html">
-    <img id="logo" width="300" height="30" src="../../assets/images/kamal-pos-system-high-resolution-logo-transparent%20(3).png"
-         alt="logo"/>
+        <img id="logo" width="300" height="30"
+             src="../../assets/images/kamal-pos-system-high-resolution-logo-transparent%20(3).png"
+             alt="logo"/>
     </a>
     <a href="../../index.html">
         <img id="btnExit" width="70" height="70" src="https://img.icons8.com/fluency/96/exit--v1.png" alt="exit--v1"
@@ -25,38 +26,28 @@
 </header>
 <section>
     <div class="div-01">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button id="customer" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Customer
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button id="item" class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Item
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button id="view" class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">View Orders
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button id="placeOrder" class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Place Orders
-                </button>
-            </li>
-        </ul>
+        <span>
+            <form action="../customer/index.html">
+            <button id="customer">Customer</button>
+            </form>
+            <form action="../item/index.html">
+            <button id="item">Items</button>
+            </form>
+            <form action="../view%20orders/index.html">
+            <button id="view">View Orders</button>
+            </form>
+            <form action="../place%20orders/index.html">
+            <button id="placeOrder">Place orders</button>
+            </form>
+        </span>
 
     </div>
     <h1>Manage Customer</h1>
     <div class="div-02">
         <input type="search" id="site-search" name="q" placeholder="Input Customer Phone Number"/>
         <button type="submit" id="btnSearch" class="btn btn-primary btn-lg">Search
-            <img class="img-01" width="40" height="40" src="https://img.icons8.com/fluency/96/search.png" alt="search"/></button>
+            <img class="img-01" width="40" height="40" src="https://img.icons8.com/fluency/96/search.png" alt="search"/>
+        </button>
     </div>
     <table>
         <thead>
@@ -142,7 +133,9 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(220, 53, 69)">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="background-color: rgb(220, 53, 69)">Close
+                    </button>
                     <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
