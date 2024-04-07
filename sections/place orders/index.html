@@ -15,7 +15,8 @@
 <body>
 <header>
     <a href="../dashboard/index.html">
-        <img id="logo" width="300" height="30" src="../../assets/images/kamal-pos-system-high-resolution-logo-transparent%20(3).png"
+        <img id="logo" width="300" height="30"
+             src="../../assets/images/kamal-pos-system-high-resolution-logo-transparent%20(3).png"
              alt="logo"/>
     </a>
     <a href="../../index.html">
@@ -72,7 +73,6 @@
             <input class="inp-05" type="text" id="disabledTextInput8" placeholder="" autocomplete="on"><br><br>
 
             <button type="submit" id="btnClear" class="btn btn-primary btn-lg">Clear</button>
-            <!--            <button type="submit" id="btnAdd" class="btn btn-primary btn-lg">Add</button>-->
             <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
                  tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
@@ -105,25 +105,48 @@
         <h5 id="h5-03">Billing Information</h5>
         <div id="div-10">
             <label class="lab-10" for="disabledTextInput9" class="form-label">Total</label><br>
-            <input class="inp-10" type="text" id="disabledTextInput9" placeholder="" autocomplete="on">
+            <input class="inp-10" type="text" id="disabledTextInput9">
         </div>
 
         <div id="div-11">
             <label class="lab-11" for="disabledTextInput10" class="form-label">Discount</label><br>
-            <input class="inp-11" type="text" id="disabledTextInput10" placeholder="" autocomplete="on">
+            <input class="inp-11" type="text" id="disabledTextInput10">
         </div>
 
         <div id="div-12">
             <label class="lab-12" for="disabledTextInput11" class="form-label">Paid Price</label><br>
-            <input class="inp-12" type="text" id="disabledTextInput11" placeholder="" autocomplete="on">
+            <input class="inp-12" type="text" id="disabledTextInput11">
         </div>
 
         <div id="div-13">
             <label class="lab-13" for="disabledTextInput12" class="form-label">Change</label><br>
-            <input class="inp-13" type="text" id="disabledTextInput12" placeholder="" autocomplete="on">
+            <input class="inp-13" type="text" id="disabledTextInput12">
         </div>
 
-
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+             tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 id="h1-03" class="modal-title fs-5" id="exampleModalToggleLabel2">Place Order</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="model-div2" class="modal-body">
+                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/bank-cards.png"
+                             alt="bank-cards"/>
+                        purchase successful
+                    </div>
+                    <div class="modal-footer" style="border-top-color: transparent">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal">OK
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="btnPurchase" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+            purchase
+        </button>
     </div>
 
 </section>

@@ -186,23 +186,24 @@ h1{
     height:47px;
     font-size: 18px;
 }
-#btnClear:hover,#btnAdd:hover{
+#btnClear:hover,#btnAdd:hover,#btnPurchase:hover{
     background-color: rgb(99, 255, 138);
     border-color: rgb(99, 255, 138);
     color: black;
 }
-#model-div{
+#model-div,#model-div2{
     text-align: center;
     top: 3vh;
     width: fit-content;
     height: fit-content;
     margin: auto;
 }
-#h1-02{
+#h1-02,#h1-03{
     position: absolute;
     top:0;
     margin-top: 2vh;
 }
+
 #div-07{
     position: absolute;
     top: 67vh;
@@ -287,4 +288,9 @@ h1{
 }
 #btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#btnPurchase{
+    position: absolute;
+    right: 5vw;
+    bottom: 1vh;
 }
