@@ -21,7 +21,11 @@ section{
     height: fit-content;
     left: 4vw;
 }
-.div-01>ul>li>button{
+.div-01>span>form{
+    display: inline;
+    margin: -2px;
+}
+.div-01>span>form>button{
     width: 11vw;
     height: 4vh;
     font-size: 1.0em;
@@ -31,6 +35,10 @@ section{
     color: black;
     text-align: center;
 }
+.div-01>span>form>button:hover{
+    color: rgb(32, 154, 237);
+}
+
 #customer{
     border-bottom-left-radius: 18px;
     border-top-left-radius: 18px;
@@ -57,6 +65,9 @@ section{
     border-top-left-radius: 0;
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
+    color: white;
+    background: rgb(32, 154, 237);
+    border-color: rgb(32, 154, 237);
 }
 h1{
     position: absolute;
