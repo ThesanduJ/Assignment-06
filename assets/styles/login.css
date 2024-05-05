@@ -1,5 +1,5 @@
 
-section{
+#background-img{
     position: relative;
     background-image: url("https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg");
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@ section{
     -webkit-filter: blur(20px);
     background-position:center ;
 }
-section>div{
+#background-col{
     width: 100vw;
     height: 100vh;
     background-color: black;
