@@ -28,7 +28,7 @@
     opacity: 70%;
     border-radius: 3%;
 }
-h1{
+#login-title{
     position: absolute;
     top: 50px;
     left: 0;
@@ -95,10 +95,9 @@ h1{
     color: black;
     border-color: rgb(99, 255, 138);
 }
-.logo{
+.login-logo{
     z-index: 1;
     position: absolute;
     top: 4vh;
     left: 2vw;
 }
-
