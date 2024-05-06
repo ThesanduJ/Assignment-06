@@ -101,3 +101,6 @@
     top: 4vh;
     left: 2vw;
 }
+#login-group{
+    position: relative;
+}
