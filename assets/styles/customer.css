@@ -1,31 +1,31 @@
-header{
+#cus-header{
     position: relative;
     width: 100vw;
     height: 13vh;
     background-color:rgb(217, 217, 217);
 }
-#btnExit{
+#cus-btnExit{
     position: absolute;
     top: 0;
     right: 1vh;
     bottom: 0;
     margin: auto;
 }
-section{
+#cus-background{
     position: relative;
 }
-.div-01{
+.cus-div-01{
     position: absolute;
     top:5vh;
     width: fit-content;
     height: fit-content;
     left: 4vw;
 }
-.div-01>span>form{
+.cus-div-01>span>form{
     display: inline;
     margin: -2px;
 }
-.div-01>span>form>button{
+.cus-div-01>span>form>button{
     width: 11vw;
     height: 4vh;
     font-size: 1.0em;
@@ -38,7 +38,7 @@ section{
 .div-01>span>form>button:hover{
     color: rgb(32, 154, 237);
 }
-#customer{
+#cus-customer{
     border-bottom-left-radius: 18px;
     border-top-left-radius: 18px;
     border-bottom-right-radius: 0;
@@ -48,27 +48,27 @@ section{
     background: rgb(32, 154, 237);
     border-color: rgb(32, 154, 237);
 }
-#item{
+#cus-item{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right-color: transparent;
 }
-#view{
+#cus-view{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right-color: transparent;
 }
-#placeOrder{
+#cus-placeOrder{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
 }
-h1{
+#cus-title{
     position: absolute;
     margin: auto;
     top: 14vh;
@@ -81,7 +81,7 @@ h1{
     font-weight: 500;
     font-style: normal;
 }
-.div-02{
+.cus-div-02{
     position: absolute;
     width: 100vw;
     height: fit-content;
@@ -89,26 +89,26 @@ h1{
     right: 0;
     top: 30vh;
 }
-.div-02>input{
+.cus-div-02>input{
     position: absolute;
     width: 50vw;
     height: 6.5vh;
     right: 30vw;
     margin: auto;
 }
-#btnSearch{
+#cus-btnSearch{
     position: absolute;
     width: 10vw;
     height: 7.0vh;
     right: 17vw;
     margin: auto;
 }
-#btnSearch:hover{
+#cus-btnSearch:hover{
     background-color: rgb(99, 255, 138);
     border-color: rgb(99, 255, 138);
     color: black;
 }
-table{
+#cus-table{
     position: absolute;
     top: 41vh;
     left: 0;
@@ -118,13 +118,13 @@ table{
     width: 70vw;
     height: 5vh;
 }
-th{
+.cus-table-header{
     width: 30vw;
     height: 10vh;
     border: black 2px solid;
     text-align: center;
 }
-td{
+.cus-table-data{
     color: black;
     width: 30vw;
     text-align: center;
@@ -146,10 +146,10 @@ td{
     border-color: rgb(99, 255, 138);
     color: black;
 }
-#btnExit:hover{
+#cus-btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-#btnAdd{
+#cus-btnAdd{
     position: absolute;
     width: 6vw;
     top: 30vh;
@@ -158,18 +158,21 @@ td{
     margin: auto;
     font-size: 1.3em;
 }
-#btnAdd:hover{
+#cus-btnAdd:hover{
     background-color: rgb(99, 255, 138);
     border-color: rgb(99, 255, 138);
     color: black;
 }
-.img-01{
+.cus-img-01{
     display: inline;
 }
-#logo{
+#cus-logo{
     position: absolute;
     top: 4vh;
     left: 2vw;
+}
+#cus-group{
+    position: relative;
 }
 
 

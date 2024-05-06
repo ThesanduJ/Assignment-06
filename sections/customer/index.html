@@ -13,87 +13,89 @@
           rel="stylesheet">
 </head>
 <body>
-<header>
+<section id="cus-group">
+<header id="cus-header">
     <a href="../dashboard/index.html">
-        <img id="logo" width="300" height="30"
+        <img id="cus-logo" width="300" height="30"
              src="../../assets/images/kamal-pos-system-high-resolution-logo-transparent%20(3).png"
              alt="logo"/>
     </a>
     <a href="../../index.html">
-        <img id="btnExit" width="70" height="70" src="https://img.icons8.com/fluency/96/exit--v1.png" alt="exit--v1"
+        <img id="cus-btnExit" width="70" height="70" src="https://img.icons8.com/fluency/96/exit--v1.png" alt="exit--v1"
              title="exit"/>
     </a>
 </header>
-<section>
-    <div class="div-01">
+<section id="cus-background">
+    <div class="cus-div-01">
         <span>
             <form action="../customer/index.html">
-            <button id="customer">Customer</button>
+            <button id="cus-customer">Customer</button>
             </form>
             <form action="../item/index.html">
-            <button id="item">Items</button>
+            <button id=" cus-item">Items</button>
             </form>
             <form action="../view%20orders/index.html">
-            <button id="view">View Orders</button>
+            <button id="cus-view">View Orders</button>
             </form>
             <form action="../place%20orders/index.html">
-            <button id="placeOrder">Place orders</button>
+            <button id="cus-placeOrder">Place orders</button>
             </form>
         </span>
 
     </div>
-    <h1>Manage Customer</h1>
-    <div class="div-02">
+    <h1 id="cus-title">Manage Customer</h1>
+    <div class="cus-div-02">
         <input type="search" id="site-search" name="q" placeholder="Input Customer Phone Number"/>
-        <button type="submit" id="btnSearch" class="btn btn-primary btn-lg">Search
-            <img class="img-01" width="40" height="40" src="https://img.icons8.com/fluency/96/search.png" alt="search"/>
+        <button type="submit" id="cus-btnSearch" class="btn btn-primary btn-lg">Search
+            <img class="cus-img-01" width="40" height="40" src="https://img.icons8.com/fluency/96/search.png"
+                 alt="search"/>
         </button>
     </div>
-    <table>
+    <table id="cus-table">
         <thead>
         <tr>
-            <th scope="col">Customer Name</th>
-            <th scope="col">Customer NIC</th>
-            <th scope="col">Customer Address</th>
-            <th scope="col">Customer Number</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
+            <th class="cus-table-header" scope="col">Customer Name</th>
+            <th class="cus-table-header" scope="col">Customer NIC</th>
+            <th class="cus-table-header" scope="col">Customer Address</th>
+            <th class="cus-table-header" scope="col">Customer Number</th>
+            <th class="cus-table-header" scope="col"></th>
+            <th class="cus-table-header" scope="col"></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>Kamal</td>
-            <td>200354430329</td>
-            <td>Kohuwala</td>
-            <td>+94765236512</td>
-            <td>
+            <td class="cus-table-data">Kamal</td>
+            <td class="cus-table-data">200354430329</td>
+            <td class="cus-table-data">Kohuwala</td>
+            <td class="cus-table-data">+94765236512</td>
+            <td class="cus-table-data">
                 <button type="submit" id="btnUpdate" class="btn btn-primary btn-lg">Update</button>
             </td>
-            <td>
+            <td class="cus-table-data">
                 <button type="submit" id="btDelete" class="btn btn-primary btn-lg">Delete</button>
             </td>
         </tr>
         <tr>
-            <td>Kamal</td>
-            <td>200354430329</td>
-            <td>Kohuwala</td>
-            <td>+94765236512</td>
-            <td>
+            <td class="cus-table-data">Kamal</td>
+            <td class="cus-table-data">200354430329</td>
+            <td class="cus-table-data">Kohuwala</td>
+            <td class="cus-table-data">+94765236512</td>
+            <td class="cus-table-data">
                 <button type="submit" id="btnUpdate" class="btn btn-primary btn-lg">Update</button>
             </td>
-            <td>
+            <td class="cus-table-data">
                 <button type="submit" id="btDelete" class="btn btn-primary btn-lg">Delete</button>
             </td>
         </tr>
         <tr>
-            <td>Kamal</td>
-            <td>200354430329</td>
-            <td>Kohuwala</td>
-            <td>+94765236512</td>
-            <td>
+            <td class="cus-table-data">Kamal</td>
+            <td class="cus-table-data">200354430329</td>
+            <td class="cus-table-data">Kohuwala</td>
+            <td class="cus-table-data">+94765236512</td>
+            <td class="cus-table-data">
                 <button type="submit" id="btnUpdate" class="btn btn-primary btn-lg">Update</button>
             </td>
-            <td>
+            <td class="cus-table-data">
                 <button type="submit" id="btDelete" class="btn btn-primary btn-lg">Delete</button>
             </td>
         </tr>
@@ -101,7 +103,7 @@
         </tbody>
     </table>
     <!-- Button trigger modal -->
-    <button type="button" id="btnAdd" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" id="cus-btnAdd" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Add
     </button>
 
@@ -142,6 +144,7 @@
         </div>
     </div>
 
+</section>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
