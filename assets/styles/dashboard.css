@@ -1,4 +1,4 @@
-body{
+#dash-body{
     overflow: hidden;
 }
 header{
@@ -7,23 +7,23 @@ header{
     height: 13vh;
     background-color:rgb(217, 217, 217);
 }
-#btnExit{
+#dash-btnExit{
     position: absolute;
     top: 0;
     right: 1vh;
     bottom: 0;
     margin: auto;
 }
-#btnExit:hover{
+#dash-btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-section{
+#dash-background{
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
 }
-h1{
+#dash-title{
     position: absolute;
     margin: auto;
     top: 9vh;
@@ -36,7 +36,7 @@ h1{
     font-weight: 500;
     font-style: normal;
 }
-#div-01{
+#dash-div-01{
     position: absolute;
     top: 40vh;
     left: 0;
@@ -45,31 +45,34 @@ h1{
     width: fit-content;
     height: fit-content;
 }
-#btnCustomer{
+#dash-btnCustomer{
     margin-right: 10vw;
 }
-#btnItems{
+#dash-btnItems{
     margin-right: 10vw;
 }
-#btnView{
+#dash-btnView{
     margin-right: 10vw;
 }
 
 
-#btnCustomer:hover,#div-02>label{
+#dash-btnCustomer:hover,#div-02>label{
     box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
-#btnItems:hover{
+#dash-btnItems:hover{
     box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
-#btnView:hover{
+#dash-btnView:hover{
     box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
-#btnPlaceOrder:hover{
+#dash-btnPlaceOrder:hover{
     box-shadow: rgb(49, 184, 249) 0px 22px 70px 10px;
 }
-#logo{
+#dash-logo{
     position: absolute;
     top: 4vh;
     left: 2vw;
+}
+#dash-group{
+    position: relative;
 }
