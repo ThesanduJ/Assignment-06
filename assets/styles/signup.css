@@ -1,7 +1,12 @@
 body{
     background-color: rgb(240, 244, 249);
 }
-section{
+#sign-up-group{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#sign-up{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -14,7 +19,7 @@ section{
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
-section>h1{
+#sign-up-title{
     position: absolute;
     bottom: 18vh;
     left: 7vw;
@@ -26,7 +31,7 @@ section>h1{
     font-weight: 400;
     font-style: normal;
 }
-.user{
+.sign-up-user{
     position: absolute;
     width: 23vw;
     height: 5vh;
@@ -38,7 +43,7 @@ section>h1{
     background-color: transparent;
     border-color: transparent transparent black transparent ;
 }
-.pw{
+.sign-up-pw{
     position: absolute;
     width: 23vw;
     height: 5vh;
@@ -50,7 +55,7 @@ section>h1{
     background-color: transparent;
     border-color: transparent transparent black transparent ;
 }
-.email{
+.sign-up-email{
     position: absolute;
     width: 23vw;
     height: 5vh;
@@ -76,7 +81,7 @@ section>h1{
     color: black;
 
 }
-#logo{
+#sign-up-logo{
     position: absolute;
     top: 10vh;
     left: 5vw;
