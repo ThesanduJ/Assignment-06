@@ -13,6 +13,8 @@
 }
 #cus-background{
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 .cus-div-01{
     position: absolute;
@@ -159,7 +161,6 @@
 }
 #cus-group{
     position: relative;
-    top: 0;
 }
 
 
