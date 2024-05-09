@@ -1,31 +1,36 @@
-header{
+#viewOrder-group{
+    position: relative;
+}
+#viewOrder-header{
     position: relative;
     width: 100vw;
     height: 13vh;
     background-color:rgb(217, 217, 217);
 }
-#btnExit{
+#viewOrder-btnExit{
     position: absolute;
     top: 0;
     right: 1vh;
     bottom: 0;
     margin: auto;
 }
-section{
+#viewOrder-section{
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
-.div-01{
+.viewOrder-div-01{
     position: absolute;
     top:5vh;
     width: fit-content;
     height: fit-content;
     left: 4vw;
 }
-.div-01>span>form{
+.viewOrder-div-01>span>form{
     display: inline;
     margin: -2px;
 }
-.div-01>span>form>button{
+.viewOrder-div-01>span>form>button{
     width: 11vw;
     height: 4vh;
     font-size: 1.0em;
@@ -35,25 +40,25 @@ section{
     color: black;
     text-align: center;
 }
-.div-01>span>form>button:hover{
+.viewOrder-div-01>span>form>button:hover{
     color: rgb(32, 154, 237);
 }
 
-#customer{
+#viewOrder-customer{
     border-bottom-left-radius: 18px;
     border-top-left-radius: 18px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right-color: transparent;
 }
-#item{
+#viewOrder-item{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right-color: transparent;
 }
-#view{
+#viewOrder-view{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -63,13 +68,13 @@ section{
     background: rgb(32, 154, 237);
     border-color: rgb(32, 154, 237);
 }
-#placeOrder{
+#viewOrder-placeOrder{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
 }
-h1{
+#viewOrder-title{
     position: absolute;
     margin: auto;
     top: 14vh;
@@ -82,7 +87,7 @@ h1{
     font-weight: 500;
     font-style: normal;
 }
-.div-02{
+.viewOrder-div-02{
     position: absolute;
     width: 100vw;
     height: fit-content;
@@ -90,26 +95,26 @@ h1{
     right: 0;
     top: 30vh;
 }
-.div-02>input{
+.viewOrder-div-02>input{
     position: absolute;
     width: 50vw;
     height: 6.5vh;
     right: 30vw;
     margin: auto;
 }
-#btnSearch{
+#viewOrder-btnSearch{
     position: absolute;
     width: 10vw;
     height: 7.0vh;
     right: 17vw;
     margin: auto;
 }
-#btnSearch:hover{
+#viewOrder-btnSearch:hover{
     background-color: rgb(99, 255, 138);
     border-color: rgb(99, 255, 138);
     color: black;
 }
-table{
+#viewOrder-table{
     position: absolute;
     top: 41vh;
     left: 0;
@@ -119,13 +124,13 @@ table{
     width: 70vw;
     height: 5vh;
 }
-th{
+#viewOrder-table>thead>tr>th{
     width: 30vw;
     height: 10vh;
     border: black 2px solid;
     text-align: center;
 }
-td{
+#viewOrder-table>tbody>tr>td{
     color: black;
     width: 30vw;
     text-align: center;
@@ -133,11 +138,11 @@ td{
     border: black 1px solid;
 
 }
-#logo{
+#viewOrder-logo{
     position: absolute;
     top: 4vh;
     left: 2vw;
 }
-#btnExit:hover{
+#viewOrder-btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
