@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/styles/login.css">
     <link rel="stylesheet" href="assets/styles/dashboard.css">
+    <link rel="stylesheet" href="assets/styles/customer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -70,9 +71,126 @@
     </section>
 </section>
 
-/*--------------------------------------------------------------------------------------------------------------------*/
+<!--------------------------------------------------------------------------------------------------------------------->
+<section id="cus-group">
+    <header id="cus-header">
+        <a href="../dashboard/index.html">
+            <img id="cus-logo" width="300" height="30"
+                 src="../../assets/images/kamal-pos-system-high-resolution-logo-transparent%20(3).png"
+                 alt="logo"/>
+        </a>
+        <a href="../../index.html">
+            <img id="cus-btnExit" width="70" height="70" src="https://img.icons8.com/fluency/96/exit--v1.png"
+                 alt="exit--v1"
+                 title="exit"/>
+        </a>
+    </header>
+    <section id="cus-background">
+        <div class="cus-div-01">
+        <span>
+            <form action="../customer/index.html">
+            <button id="cus-customer">Customer</button>
+            </form>
+            <form action="../item/index.html">
+            <button id=" cus-item">Items</button>
+            </form>
+            <form action="../view%20orders/index.html">
+            <button id="cus-view">View Orders</button>
+            </form>
+            <form action="../place%20orders/index.html">
+            <button id="cus-placeOrder">Place orders</button>
+            </form>
+        </span>
 
+        </div>
+        <h1 id="cus-title">Manage Customer</h1>
+        <div class="cus-div-02">
+            <input type="search" id="site-search" name="q" placeholder="Input Customer Phone Number"/>
+            <button type="submit" id="cus-btnSearch" class="btn btn-primary btn-lg">Search
+                <img class="cus-img-01" width="40" height="40" src="https://img.icons8.com/fluency/96/search.png"
+                     alt="search"/>
+            </button>
+        </div>
+        <table id="cus-table">
+            <thead>
+            <tr>
+                <th class="cus-table-header" scope="col">Customer Name</th>
+                <th class="cus-table-header" scope="col">Customer NIC</th>
+                <th class="cus-table-header" scope="col">Customer Address</th>
+                <th class="cus-table-header" scope="col">Customer Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="cus-table-data">Kamal</td>
+                <td class="cus-table-data">200354430329</td>
+                <td class="cus-table-data">Kohuwala</td>
+                <td class="cus-table-data">+94765236512</td>
+            </tr>
+            <tr>
+                <td class="cus-table-data">Kamal</td>
+                <td class="cus-table-data">200354430329</td>
+                <td class="cus-table-data">Kohuwala</td>
+                <td class="cus-table-data">+94765236512</td>
 
+            </tr>
+            <tr>
+                <td class="cus-table-data">Kamal</td>
+                <td class="cus-table-data">200354430329</td>
+                <td class="cus-table-data">Kohuwala</td>
+                <td class="cus-table-data">+94765236512</td>
+            </tr>
+
+            </tbody>
+        </table>
+        <!-- Button trigger modal -->
+        <button type="button" id="cus-btnAdd" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+            Add
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+
+                        <div class="card">
+                            <div class="card-header">
+                                Customer Details
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="disabledTextInput" class="form-label">Customer Name</label><br>
+                                    <input type="text" id="disabledTextInput" placeholder="name"><br><br>
+                                    <label for="disabledTextInput" class="form-label">Customer NIC</label><br>
+                                    <input type="text" id="disabledTextInput2" placeholder="NIC"><br><br>
+                                    <label for="disabledTextInput" class="form-label">Customer Address</label><br>
+                                    <input type="text" id="disabledTextInput3" placeholder="Address"><br><br>
+                                    <label for="disabledTextInput" class="form-label">Customer Number</label><br>
+                                    <input type="text" id="disabledTextInput4" placeholder="Phone Number">
+                                </div>
+
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-primary">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                style="background-color: rgb(220, 53, 69)">Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>
+<!--------------------------------------------------------------------------------------------------------------------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
