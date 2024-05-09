@@ -35,7 +35,7 @@
     color: black;
     text-align: center;
 }
-.div-01>span>form>button:hover{
+.cus-div-01>span>form>button:hover{
     color: rgb(32, 154, 237);
 }
 #cus-customer{
@@ -132,20 +132,6 @@
     border: black 1px solid;
 
 }
-#btnUpdate,#btDelete{
-    width: fit-content;
-    height: 5vh;
-}
-#btDelete{
-    background-color: rgb(220, 53, 69);
-    border-color: rgb(220, 53, 69);
-}
-
-#btnUpdate:hover,#btDelete:hover{
-    background-color: rgb(99, 255, 138);
-    border-color: rgb(99, 255, 138);
-    color: black;
-}
 #cus-btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -173,6 +159,7 @@
 }
 #cus-group{
     position: relative;
+    top: 0;
 }
 
 
