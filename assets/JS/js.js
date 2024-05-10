@@ -305,7 +305,6 @@ $('#placeOrder-placeOrder').on('click', () => {
 });
 
 
-
 //----------------------view Order---------------------------------------------------
 
 $('#viewOrder-logo').on('click', () => {
