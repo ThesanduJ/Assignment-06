@@ -132,26 +132,26 @@
                 <th class="cus-table-header" scope="col">Customer Number</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <td class="cus-table-data">Kamal</td>
-                <td class="cus-table-data">200354430329</td>
-                <td class="cus-table-data">Kohuwala</td>
-                <td class="cus-table-data">+94765236512</td>
-            </tr>
-            <tr>
-                <td class="cus-table-data">Kamal</td>
-                <td class="cus-table-data">200354430329</td>
-                <td class="cus-table-data">Kohuwala</td>
-                <td class="cus-table-data">+94765236512</td>
+            <tbody id="cus-table-body">
+<!--            <tr>-->
+<!--                <td class="cus-table-data">Kamal</td>-->
+<!--                <td class="cus-table-data">200354430329</td>-->
+<!--                <td class="cus-table-data">Kohuwala</td>-->
+<!--                <td class="cus-table-data">+94765236512</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="cus-table-data">Kamal</td>-->
+<!--                <td class="cus-table-data">200354430329</td>-->
+<!--                <td class="cus-table-data">Kohuwala</td>-->
+<!--                <td class="cus-table-data">+94765236512</td>-->
 
-            </tr>
-            <tr>
-                <td class="cus-table-data">Kamal</td>
-                <td class="cus-table-data">200354430329</td>
-                <td class="cus-table-data">Kohuwala</td>
-                <td class="cus-table-data">+94765236512</td>
-            </tr>
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="cus-table-data">Kamal</td>-->
+<!--                <td class="cus-table-data">200354430329</td>-->
+<!--                <td class="cus-table-data">Kohuwala</td>-->
+<!--                <td class="cus-table-data">+94765236512</td>-->
+<!--            </tr>-->
 
             </tbody>
         </table>
@@ -174,13 +174,13 @@
                             <div class="card-body">
                                 <div class="mb-3">
                                     <label for="disabledTextInput" class="form-label">Customer Name</label><br>
-                                    <input type="text" id="disabledTextInput" placeholder="name"><br><br>
+                                    <input class="customer-name" type="text" id="disabledTextInput" placeholder="name"><br><br>
                                     <label for="disabledTextInput2" class="form-label">Customer NIC</label><br>
-                                    <input type="text" id="disabledTextInput2" placeholder="NIC"><br><br>
+                                    <input class="customer-nic" type="text" id="disabledTextInput2" placeholder="NIC"><br><br>
                                     <label for="disabledTextInput3" class="form-label">Customer Address</label><br>
-                                    <input type="text" id="disabledTextInput3" placeholder="Address"><br><br>
+                                    <input class="customer-address" type="text" id="disabledTextInput3" placeholder="Address"><br><br>
                                     <label for="disabledTextInput4" class="form-label">Customer Number</label><br>
-                                    <input type="text" id="disabledTextInput4" placeholder="Phone Number">
+                                    <input class="customer-number" type="text" id="disabledTextInput4" placeholder="Phone Number">
                                 </div>
 
                                 <br>
@@ -194,7 +194,7 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                                 style="background-color: rgb(220, 53, 69)">Close
                         </button>
-                        <button type="button" class="btn btn-primary">Save</button>
+                        <button id="customer-btnSave" type="button" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
