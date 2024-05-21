@@ -120,6 +120,13 @@
     width: 70vw;
     height: 5vh;
 }
+#cus-table-body>tr{
+    border: black 1px solid;
+}
+#cus-table-body>tr>td{
+    text-align: center;
+    border: black 1px solid;
+}
 .cus-table-header{
     width: 30vw;
     height: 10vh;
