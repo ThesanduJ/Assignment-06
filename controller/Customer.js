@@ -1,3 +1,6 @@
+import db from "../model/CustomerModel.js";
+import {customers} from "../db/db.js";
+
 $('#cus-btnExit').on('click', () => {
     $('#login-group').css({display: 'block'});
     $('#dash-group').css({display: 'none'});
@@ -63,4 +66,37 @@ $('#cus-placeOrder').on('click', () => {
     $('#viewOrder-group').css({display: 'none'});
     $('#sign-up-group').css({display: 'none'});
 
+});
+function loadTable() {
+
+    $("#cus-table-body").empty();
+
+    customers.map((item, index) => {
+        let record = `<tr>
+                <td class="cus-name">${item.name}</td>
+                <td class="cus-nic">${item.nic}</td>
+                <td class="cus-address">${item.address}</td>
+                <td class="cus-number">${item.number}</td>
+            </tr>`;
+        $("#cus-table-body").append(record);
+    });
+}
+$("#customer-btnSave").on('click', () => {
+
+    var customerName = $('.customer-name').val();
+    var customerNIC = $('.customer-nic').val();
+    var customerAddress = $('.customer-address').val();
+    var customerNumber = $('.customer-number').val();
+
+    // create an object
+    let customer = {
+        name: customerName,
+        nic: customerNIC,
+        address: customerAddress,
+        number: customerNumber
+    }
+    // push to the array
+    customers.push(customer);
+
+    loadTable();
 });
