@@ -128,19 +128,12 @@
     border: black 2px solid;
     text-align: center;
 }
-#item-table>thead>th{
-    width: 30vw;
-    height: 10vh;
-    border: black 2px solid;
-    text-align: center;
-}
-#item-table>tbody>tr>td{
-    color: black;
-    width: 30vw;
-    text-align: center;
-    height: 10vh;
+#item-table-body>tr{
     border: black 1px solid;
-
+}
+#item-table-body>tr>td{
+    text-align: center;
+    border: black 1px solid;
 }
 #item-btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
