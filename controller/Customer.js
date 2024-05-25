@@ -1,5 +1,7 @@
 import db from "../model/CustomerModel.js";
 import {customers} from "../db/db.js";
+import CustomerModel from "../model/CustomerModel.js";
+var recordIndex;
 
 $('#cus-btnExit').on('click', () => {
     $('#login-group').css({display: 'block'});
@@ -100,3 +102,27 @@ $("#customer-btnSave").on('click', () => {
 
     loadTable();
 });
+
+$("#cus-btnDelete").on('click', () => {
+    customers.splice(recordIndex, 1);
+    loadTable();
+});
+
+$("#cus-table-body").on('click', 'tr', function() {
+    let index = $(this).index();
+    recordIndex = index;
+
+    console.log("index: ", index);
+
+    let name = $(this).find(".cus-name").text();
+    let nic = $(this).find(".cus-nic").text();
+    let address = $(this).find(".cus-address").text();
+    let number = $(this).find(".cus-number").text();
+
+    $(".customer-name").val(name);
+    $(".customer-nic").val(nic);
+    $(".customer-address").val(address);
+    $(".customer-number").val(number);
+
+    let customer=new CustomerModel(name,nic,address,number);
+})
