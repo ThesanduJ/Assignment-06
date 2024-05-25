@@ -1,5 +1,7 @@
 import db from "../model/ItemModel.js";
-import {items} from "../db/db.js";
+import {customers, items} from "../db/db.js";
+import ItemModel from "../model/ItemModel.js";
+var recordIndex;
 
 $('#item-btnExit').on('click', () => {
     $('#login-group').css({display: 'block'});
@@ -100,3 +102,26 @@ $("#item-btnSave").on('click', () => {
 
     loadTable();
 });
+
+$("#item-btnDelete").on('click', () => {
+    items.splice(recordIndex, 1);
+    loadTable();
+});
+
+$("#item-table-body").on('click', 'tr', function() {
+    let index = $(this).index();
+    recordIndex = index;
+    console.log("index: ", index);
+
+    let code = $(this).find(".item-id").text();
+    let itemName = $(this).find(".item-description").text();
+    let price = $(this).find(".item-price").text();
+    let qty = $(this).find(".item-qty").text();
+
+    $(".item-ids").val(code);
+    $(".item-name").val(itemName);
+    $(".item-prices").val(price);
+    $(".item-quantities").val(qty);
+
+    let item=new ItemModel(code,itemName,price,qty);
+})
