@@ -1,5 +1,5 @@
 import db from "../model/ItemModel.js";
-import {customers, items} from "../db/db.js";
+import {items} from "../db/db.js";
 import ItemModel from "../model/ItemModel.js";
 var recordIndex;
 
@@ -125,3 +125,22 @@ $("#item-table-body").on('click', 'tr', function() {
 
     let item=new ItemModel(code,itemName,price,qty);
 })
+
+$("#item-btnUpdate").on('click', () => {
+    var itemID = $('.item-ids').val();
+    var itemName = $('.item-name').val();
+    var price = $('.item-prices').val();
+    var qty = $('.item-quantities').val();
+
+    let itemObj = items[recordIndex];
+    // let studentObj = {...students[recordIndex]}; // clone object
+    itemObj.itemCode = itemID;
+    itemObj.itemName = itemName;
+    itemObj.price = price;
+    itemObj.itemQty = qty;
+
+    // console.log("S1: ", studentObj);
+    // console.log("S2: ", students[recordIndex]);
+
+    loadTable();
+});
