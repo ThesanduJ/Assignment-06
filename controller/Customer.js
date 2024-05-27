@@ -126,3 +126,22 @@ $("#cus-table-body").on('click', 'tr', function() {
 
     let customer=new CustomerModel(name,nic,address,number);
 })
+
+$("#customer-btnUpdate").on('click', () => {
+    var customerName = $('.customer-name').val();
+    var customerNIC = $('.customer-nic').val();
+    var customerAddress = $('.customer-address').val();
+    var customerNumber = $('.customer-number').val();
+
+    let customerObj = customers[recordIndex];
+    // let studentObj = {...students[recordIndex]}; // clone object
+    customerObj.name = customerName;
+    customerObj.nic = customerNIC;
+    customerObj.address = customerAddress;
+    customerObj.number = customerNumber;
+
+    // console.log("S1: ", studentObj);
+    // console.log("S2: ", students[recordIndex]);
+
+    loadTable();
+});
