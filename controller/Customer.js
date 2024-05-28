@@ -84,23 +84,42 @@ function loadTable() {
     });
 }
 $("#customer-btnSave").on('click', () => {
+    while (true) {
+        if ($('.customer-name').val() === null || $('.customer-name').val() === '') {
+            swal("Error!", "Something went wrong in customer name!", "error");
+            break;
+        }
+        if ($('.customer-nic').val() === null || $('.customer-nic').val() === '') {
+            swal("Error!", "Something went wrong in customer nic!", "error");
+            break;
+        }
+        if ($('.customer-address').val() === null || $('.customer-address').val() === '') {
+            swal("Error!", "Something went wrong in customer address!", "error");
+            break;
+        }
+        if ($('.customer-number').val() === null || $('.customer-number').val() === '') {
+            swal("Error!", "Something went wrong in customer contact number!", "error");
+            break;
+        }
+        else {
+            var customerName = $('.customer-name').val();
+            var customerNIC = $('.customer-nic').val();
+            var customerAddress = $('.customer-address').val();
+            var customerNumber = $('.customer-number').val();
 
-    var customerName = $('.customer-name').val();
-    var customerNIC = $('.customer-nic').val();
-    var customerAddress = $('.customer-address').val();
-    var customerNumber = $('.customer-number').val();
-
-    // create an object
-    let customer = {
-        name: customerName,
-        nic: customerNIC,
-        address: customerAddress,
-        number: customerNumber
+            // create an object
+            let customer = {
+                name: customerName,
+                nic: customerNIC,
+                address: customerAddress,
+                number: customerNumber
+            }
+            // push to the array
+            customers.push(customer);
+            loadTable();
+            break;
+        }
     }
-    // push to the array
-    customers.push(customer);
-
-    loadTable();
 });
 
 $("#cus-btnDelete").on('click', () => {
