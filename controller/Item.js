@@ -84,23 +84,42 @@ function loadTable() {
     });
 }
 $("#item-btnSave").on('click', () => {
+    while (true) {
+        if ($('.item-ids').val() === null || $('.item-ids').val() === '') {
+            swal("Error!", "Something went wrong in item ID!", "error");
+            break;
+        }
+        if ($('.item-name').val() === null || $('.item-name').val() === '') {
+            swal("Error!", "Something went wrong in item name!", "error");
+            break;
+        }
+        if ($('.item-prices').val() === null || $('.item-prices').val() === '') {
+            swal("Error!", "Something went wrong in item price!", "error");
+            break;
+        }
+        if ($('.item-quantities').val() === null || $('.item-quantities').val() === '') {
+            swal("Error!", "Something went wrong in customer item quantity!", "error");
+            break;
+        } else {
+            var itemID = $('.item-ids').val();
+            var itemDes = $('.item-name').val();
+            var itemPrice = $('.item-prices').val();
+            var itemQty = $('.item-quantities').val();
 
-    var itemID = $('.item-ids').val();
-    var itemDes = $('.item-name').val();
-    var itemPrice = $('.item-prices').val();
-    var itemQty = $('.item-quantities').val();
+            // create an object
+            let itemsDetails = {
+                itemCode: itemID,
+                itemName: itemDes,
+                price: itemPrice,
+                itemQty: itemQty
+            }
+            // push to the array
+            items.push(itemsDetails);
 
-    // create an object
-    let itemsDetails = {
-        itemCode: itemID,
-        itemName: itemDes,
-        price: itemPrice,
-        itemQty: itemQty
+            loadTable();
+            break;
+        }
     }
-    // push to the array
-    items.push(itemsDetails);
-
-    loadTable();
 });
 
 $("#item-btnDelete").on('click', () => {
