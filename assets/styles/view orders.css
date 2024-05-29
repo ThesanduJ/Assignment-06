@@ -102,6 +102,18 @@
     right: 30vw;
     margin: auto;
 }
+#viewOrder-btnDelete{
+    position: absolute;
+    width: 10vw;
+    height: 7.0vh;
+    right: 5vw;
+    margin: auto;
+}
+#viewOrder-btnDelete:hover{
+    background-color: rgb(99, 255, 138);
+    border-color: rgb(99, 255, 138);
+    color: black;
+}
 #viewOrder-btnSearch{
     position: absolute;
     width: 10vw;
