@@ -147,20 +147,40 @@ $("#cus-table-body").on('click', 'tr', function() {
 })
 
 $("#customer-btnUpdate").on('click', () => {
-    var customerName = $('.customer-name').val();
-    var customerNIC = $('.customer-nic').val();
-    var customerAddress = $('.customer-address').val();
-    var customerNumber = $('.customer-number').val();
+    while (true) {
+        if ($('.customer-name').val() === null || $('.customer-name').val() === '') {
+            swal("Error!", "Something went wrong in customer name!", "error");
+            break;
+        }
+        if ($('.customer-nic').val() === null || $('.customer-nic').val() === '') {
+            swal("Error!", "Something went wrong in customer nic!", "error");
+            break;
+        }
+        if ($('.customer-address').val() === null || $('.customer-address').val() === '') {
+            swal("Error!", "Something went wrong in customer address!", "error");
+            break;
+        }
+        if ($('.customer-number').val() === null || $('.customer-number').val() === '') {
+            swal("Error!", "Something went wrong in customer contact number!", "error");
+            break;
+        } else {
+            var customerName = $('.customer-name').val();
+            var customerNIC = $('.customer-nic').val();
+            var customerAddress = $('.customer-address').val();
+            var customerNumber = $('.customer-number').val();
 
-    let customerObj = customers[recordIndex];
-    // let studentObj = {...students[recordIndex]}; // clone object
-    customerObj.name = customerName;
-    customerObj.nic = customerNIC;
-    customerObj.address = customerAddress;
-    customerObj.number = customerNumber;
+            let customerObj = customers[recordIndex];
+            // let studentObj = {...students[recordIndex]}; // clone object
+            customerObj.name = customerName;
+            customerObj.nic = customerNIC;
+            customerObj.address = customerAddress;
+            customerObj.number = customerNumber;
 
-    // console.log("S1: ", studentObj);
-    // console.log("S2: ", students[recordIndex]);
+            // console.log("S1: ", studentObj);
+            // console.log("S2: ", students[recordIndex]);
 
-    loadTable();
+            loadTable();
+            break;
+        }
+    }
 });
