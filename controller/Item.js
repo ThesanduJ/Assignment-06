@@ -98,7 +98,7 @@ $("#item-btnSave").on('click', () => {
             break;
         }
         if ($('.item-quantities').val() === null || $('.item-quantities').val() === '') {
-            swal("Error!", "Something went wrong in customer item quantity!", "error");
+            swal("Error!", "Something went wrong in item quantity!", "error");
             break;
         } else {
             var itemID = $('.item-ids').val();
@@ -146,20 +146,40 @@ $("#item-table-body").on('click', 'tr', function() {
 })
 
 $("#item-btnUpdate").on('click', () => {
-    var itemID = $('.item-ids').val();
-    var itemName = $('.item-name').val();
-    var price = $('.item-prices').val();
-    var qty = $('.item-quantities').val();
+    while (true) {
+        if ($('.item-ids').val() === null || $('.item-ids').val() === '') {
+            swal("Error!", "Something went wrong in item ID!", "error");
+            break;
+        }
+        if ($('.item-name').val() === null || $('.item-name').val() === '') {
+            swal("Error!", "Something went wrong in item name!", "error");
+            break;
+        }
+        if ($('.item-prices').val() === null || $('.item-prices').val() === '') {
+            swal("Error!", "Something went wrong in item price!", "error");
+            break;
+        }
+        if ($('.item-quantities').val() === null || $('.item-quantities').val() === '') {
+            swal("Error!", "Something went wrong in item quantity!", "error");
+            break;
+        } else {
+            var itemID = $('.item-ids').val();
+            var itemName = $('.item-name').val();
+            var price = $('.item-prices').val();
+            var qty = $('.item-quantities').val();
 
-    let itemObj = items[recordIndex];
-    // let studentObj = {...students[recordIndex]}; // clone object
-    itemObj.itemCode = itemID;
-    itemObj.itemName = itemName;
-    itemObj.price = price;
-    itemObj.itemQty = qty;
+            let itemObj = items[recordIndex];
+            // let studentObj = {...students[recordIndex]}; // clone object
+            itemObj.itemCode = itemID;
+            itemObj.itemName = itemName;
+            itemObj.price = price;
+            itemObj.itemQty = qty;
 
-    // console.log("S1: ", studentObj);
-    // console.log("S2: ", students[recordIndex]);
+            // console.log("S1: ", studentObj);
+            // console.log("S2: ", students[recordIndex]);
 
-    loadTable();
+            loadTable();
+            break;
+        }
+    }
 });
