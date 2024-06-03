@@ -1,13 +1,19 @@
-$('#dash-btnExit').on('click', () => {
-    $('#login-group').css({display: 'block'});
-    $('#dash-group').css({display: 'none'});
-    $('#cus-group').css({display: 'none'});
-    $('#item-group').css({display: 'none'});
-    $('#placeOrder-group').css({display: 'none'});
-    $('#viewOrder-group').css({display: 'none'});
-    $('#sign-up-group').css({display: 'none'});
+// $('#dash-btnExit').on('click', () => {
+//     $('#login-group').css({display: 'block'});
+//     $('#dash-group').css({display: 'none'});
+//     $('#cus-group').css({display: 'none'});
+//     $('#item-group').css({display: 'none'});
+//     $('#placeOrder-group').css({display: 'none'});
+//     $('#viewOrder-group').css({display: 'none'});
+//     $('#sign-up-group').css({display: 'none'});
+//
+// });
 
-});
+$('#dash-group').css({display: 'block'});
+$('#cus-group').css({display: 'none'});
+$('#item-group').css({display: 'none'});
+$('#placeOrder-group').css({display: 'none'});
+$('#viewOrder-group').css({display: 'none'});
 
 $('#dash-btnCustomer').on('click', () => {
     $('#login-group').css({display: 'none'});
