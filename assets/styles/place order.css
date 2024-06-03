@@ -88,7 +88,7 @@
     position: absolute;
     border: solid black 1px;
     width: 30vw;
-    height: 36VH;
+    height: 44VH;
     top: 27vh;
     left: 10vw;
     text-align: center;
@@ -125,7 +125,7 @@
 /*    height: fit-content;*/
 /*    top: 27vh;*/
 /*}*/
-.placeOrder-inp-01,.placeOrder-inp-02,.placeOrder-inp-03,.placeOrder-inp-04,.placeOrder-inp-05,.placeOrder-inp-06{
+.placeOrder-inp,.placeOrder-inp-01,.placeOrder-inp-02,.placeOrder-inp-03,.placeOrder-inp-04,.placeOrder-inp-05,.placeOrder-inp-06{
     width: 18vw;
     height: fit-content;
     top: 27vh;
@@ -141,10 +141,10 @@
     font-weight: 500;
     font-style: normal;
     position: absolute;
-    width: 44vw;
-    height: 36VH;
+    width: 21vw;
+    height: 44VH;
     border: black solid 1px;
-    right: 10vw;
+    right: 35vw;
     top: 27vh;
     border-radius: 10px;
 }
@@ -187,9 +187,13 @@
     color: white;
     border-radius: 10px;
 }
-#placeOrder-btnClear,#placeOrder-btnAdd{
-    margin-left: 3vw;
-    margin-top: 1vh;
+#placeOrder-btnAdd{
+   width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 #placeOrder-btnAdd{
     width:79px;
@@ -213,71 +217,79 @@
     top:0;
     margin-top: 2vh;
 }
+.placeOrder-div-40{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
 #placeOrder-div-07{
     position: absolute;
-    top: 67vh;
-    width: 80vw;
-    height: 18vh;
-    margin-left:10vw;
+    top: 27vh;
+    width: 20vw;
+    height: 52vh;
+    right: 10vw;
     border: black 1px solid;
     border-radius: 10px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
-#placeOrder-div-10{
-    position: absolute;
-    width: 1vw;
-    height: 1vh;
-    left: 0;
-    bottom: 13vh;
-    margin: auto;
+/*#placeOrder-div-10{*/
+/*    position: absolute;*/
+/*    width: 1vw;*/
+/*    height: 1vh;*/
+/*    left: 0;*/
+/*    bottom: 13vh;*/
+/*    margin: auto;*/
 
-}
-#placeOrder-div-11{
-    position: absolute;
-    width: 1vw;
-    height: 1vh;
-    left: 10vw;
-    bottom: 13vh;
-    margin: auto;
+/*}*/
+/*#placeOrder-div-11{*/
+/*    position: absolute;*/
+/*    width: 1vw;*/
+/*    height: 1vh;*/
+/*    left: 10vw;*/
+/*    bottom: 13vh;*/
+/*    margin: auto;*/
 
-}
+/*}*/
 
-#placeOrder-div-12{
-    position: absolute;
-    width: 1vw;
-    height: 1vh;
-    left: 20vw;
-    bottom: 13vh;
-    margin: auto;
-}
+/*#placeOrder-div-12{*/
+/*    position: absolute;*/
+/*    width: 1vw;*/
+/*    height: 1vh;*/
+/*    left: 20vw;*/
+/*    bottom: 13vh;*/
+/*    margin: auto;*/
+/*}*/
 
-#placeOrder-div-13{
-    position: absolute;
-    width: 1vw;
-    height: 1vh;
-    left: 30vw;
-    bottom: 13vh;
-    margin: auto;
-}
-.placeOrder-inp-10,.placeOrder-lab-10{
-    width: 15vw;
-    margin-left: 3vw;
-}
-.placeOrder-inp-11,.placeOrder-lab-11{
-    width: 15vw;
-    margin-left: 13vw;
-}
-.placeOrder-inp-12,.placeOrder-lab-12{
-    width: 15vw;
-    margin-left: 23vw;
-}
-.placeOrder-inp-13,.placeOrder-lab-13{
-    width: 15vw;
-    margin-left: 33vw;
-}
+/*#placeOrder-div-13{*/
+/*    position: absolute;*/
+/*    width: 1vw;*/
+/*    height: 1vh;*/
+/*    left: 30vw;*/
+/*    bottom: 13vh;*/
+/*    margin: auto;*/
+/*}*/
+/*.placeOrder-inp-10,.placeOrder-lab-10{*/
+/*    width: 15vw;*/
+/*    margin-left: 3vw;*/
+/*}*/
+/*.placeOrder-inp-11,.placeOrder-lab-11{*/
+/*    width: 15vw;*/
+/*    margin-left: 13vw;*/
+/*}*/
+/*.placeOrder-inp-12,.placeOrder-lab-12{*/
+/*    width: 15vw;*/
+/*    margin-left: 23vw;*/
+/*}*/
+/*.placeOrder-inp-13,.placeOrder-lab-13{*/
+/*    width: 15vw;*/
+/*    margin-left: 33vw;*/
+/*}*/
 /*#btnAdd-02{*/
 /*    position: absolute;*/
 /*    right: 4vw;*/
@@ -300,9 +312,13 @@
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 #placeOrder-btnPurchase{
+    width: fit-content;
+    height: fit-content;
     position: absolute;
-    right: 5vw;
+    right: 0;
+    left: 0;
     bottom: 1vh;
+    margin: auto;
 }
 #placeOrder-group{
     position: relative;
