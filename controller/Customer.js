@@ -84,6 +84,18 @@ function loadTable() {
     });
 }
 $("#customer-btnSave").on('click', () => {
+    // for (let i = 0; i < customers.length; i++) {
+    //     if ($('.customer-name').val() === customers[i].name) {
+    //         swal("Error!", "Customer name is duplicated", "error");
+    //     }
+    //     if ($('.customer-nic').val() === customers[i].nic) {
+    //         swal("Error!", "Customer NIC is duplicated", "error");
+    //     }
+    //     if ($('.customer-number').val() === customers[i].number) {
+    //         swal("Error!", "Customer contact number is duplicated", "error");
+    //     }
+    // }
+
     while (true) {
         if ($('.customer-name').val() === null || $('.customer-name').val() === '') {
             swal("Error!", "Something went wrong in customer name!", "error");
@@ -120,6 +132,7 @@ $("#customer-btnSave").on('click', () => {
             break;
         }
     }
+
 });
 
 $("#cus-btnDelete").on('click', () => {
