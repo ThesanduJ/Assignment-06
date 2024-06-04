@@ -205,6 +205,16 @@
     border-color: rgb(99, 255, 138);
     color: black;
 }
+#placeOrder-btnRemove{
+    background-color: rgb(253, 86, 86);
+    border-color: rgb(253, 86, 86);
+    color: #ffffff;
+}
+#placeOrder-btnRemove:hover{
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
 #placeOrder-model-div,#placeOrder-model-div1{
     text-align: center;
     top: 3vh;
@@ -311,15 +321,33 @@
 #placeOrder-btnExit:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-#placeOrder-btnPurchase{
-    width: fit-content;
+#btn-group{
+   width: fit-content;
     height: fit-content;
     position: absolute;
-    right: 0;
     left: 0;
-    bottom: 1vh;
+    right: 0;
     margin: auto;
+    bottom: 1vh;
 }
+/*#placeOrder-btnPurchase{*/
+/*    width: fit-content;*/
+/*    height: fit-content;*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    bottom: 1vh;*/
+/*    margin: auto;*/
+/*}*/
+/*#placeOrder-btnRemove{*/
+/*    width: fit-content;*/
+/*    height: fit-content;*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    bottom: 1vh;*/
+/*    margin: auto;*/
+/*}*/
 #placeOrder-group{
     position: relative;
 }
