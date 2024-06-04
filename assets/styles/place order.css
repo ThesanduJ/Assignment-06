@@ -215,6 +215,14 @@
     border-color: rgb(255, 0, 0);
     color: #ffffff;
 }
+#group-total{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 33vh;
+}
 #placeOrder-model-div,#placeOrder-model-div1{
     text-align: center;
     top: 3vh;
@@ -328,7 +336,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 1vh;
+    top: 44vh;
 }
 /*#placeOrder-btnPurchase{*/
 /*    width: fit-content;*/
