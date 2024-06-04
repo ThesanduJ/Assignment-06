@@ -64,3 +64,26 @@ $('#placeOrder-placeOrder').on('click', () => {
     $('#sign-up-group').css({display: 'none'});
 
 });
+
+$(".placeOrder-inp-01").val("O-01");
+$(document).ready(function() {
+    var count=2;
+    $("#placeOrder-btnPurchase").click(function (){
+        if (count<=0) {
+            count=1;
+        }
+        $(".placeOrder-inp-01").val("O-0"+count);
+        ++count;
+        console.log(count);
+    });
+
+    $("#placeOrder-btnRemove").click(function (){
+        --count;
+        if (count>0){
+            $(".placeOrder-inp-01").val("O-0"+count);
+        }else {
+            swal("Error!", "Can't change the Order ID!", "error");
+        }
+        console.log(count);
+    });
+});
