@@ -1,4 +1,4 @@
-import {customers} from "../db/db.js";
+import {customers, items} from "../db/db.js";
 
 $('#placeOrder-btnExit').on('click', () => {
     $('#login-group').css({display: 'block'});
@@ -101,6 +101,22 @@ $("document").ready(function () {
                 break;
             }else {
                 $(".placeOrder-inp-03").val("");
+            }
+        }
+    });
+});
+$("document").ready(function () {
+    $(".placeOrder-inp-04").on('input',function () {
+        var inputV=$(this).val();
+        var itemName=null;
+        for (let i = 0; i <items.length; i++) {
+            if (inputV===items[i].itemCode){
+                itemName=items[i].itemName;
+                $(".placeOrder-inp-05").val(itemName);
+                console.log(itemName);
+                break;
+            }else {
+                $(".placeOrder-inp-05").val("");
             }
         }
     });
