@@ -1,4 +1,8 @@
-import {customers, items} from "../db/db.js";
+import {customers, items, orders} from "../db/db.js";
+import PlaceOrderModel from "../model/PlaceOrderModel.js";
+import CustomerModel from "../model/CustomerModel";
+
+var recordIndex;
 
 var price;
 var itemCount = null;
@@ -155,6 +159,74 @@ $("document").ready(function () {
     });
 });
 
+function loadTable() {
+
+    $("#order-table-body").empty();
+
+    orders.map((item, index) => {
+        let record = `<tr>
+                <td class="order-ID">${item.orderId}</td>
+                <td class="customer-name">${item.customerName}</td>
+                <td class="item-code">${item.itemCode}</td>
+                <td class="qty">${item.quantity}</td>
+                <td class="order-date">${item.orderDate}</td>
+                <td class="total-price">${item.totalPrice}</td>
+                <td class="paid-price">${item.paidPrice}</td>
+            </tr>`;
+        $("#order-table-body").append(record);
+    });
+}
+
+$("#placeOrder-btnPurchase").on('click', () => {
+    var orderId = $('.placeOrder-inp-01').val();
+    var customerName = $('.placeOrder-inp-03').val();
+    var itemCode = $('.placeOrder-inp-04').val();
+    var qty = $('.placeOrder-inp-06').val();
+    var orderDate = $('.placeOrder-inp').val();
+    var totalPrice = $('#total').val();
+    var PaidPrice = $('.placeOrder-inp-12').val();
+
+    let orders1 = {
+        orderId: orderId,
+        customerName: customerName,
+        itemCode: itemCode,
+        quantity: qty,
+        orderDate: orderDate,
+        totalPrice: totalPrice,
+        paidPrice: PaidPrice
+    }
+    orders.push(orders1);
+    loadTable();
+});
+// $("#order-table-body").on('click', 'tr', function () {
+//     let index = $(this).index();
+//     recordIndex = index;
+//
+//     console.log("index: ", index);
+//
+//     let orderID = $(this).find(".order-ID").text();
+//     let customerName = $(this).find(".customer-name").text();
+//     let itemCode = $(this).find(".item-code").text();
+//     let qty = $(this).find(".qty").text();
+//     let orderDate = $(this).find(".order-date").text();
+//     let totalPrice = $(this).find(".total-price").text();
+//     let paidPrice = $(this).find(".paid-price").text();
+//
+//
+//     $(".order-ID").val(orderID);
+//     $(".customer-name").val(customerName);
+//     $(".item-code").val(itemCode);
+//     $(".qty").val(qty);
+//     $(".order-date").val(orderDate);
+//     $(".total-price").val(totalPrice);
+//     $(".paid-price").val(paidPrice);
+//
+//     let order2 = new PlaceOrderModel(orderID, customerName,itemCode,qty,orderDate,totalPrice,paidPrice);
+// });
+// $("#viewOrder-btnDelete").on('click', () => {
+//     orders.splice(recordIndex, 1);
+//     loadTable();
+// });
 
 
 
