@@ -1,3 +1,5 @@
+import {customers} from "../db/db.js";
+
 $('#placeOrder-btnExit').on('click', () => {
     $('#login-group').css({display: 'block'});
     $('#dash-group').css({display: 'none'});
@@ -87,3 +89,25 @@ $(document).ready(function() {
         console.log(count);
     });
 });
+$("document").ready(function () {
+    $(".placeOrder-inp-02").on('input',function () {
+        var inputV=$(this).val();
+        var name=null;
+        for (let i = 0; i <customers.length; i++) {
+            if (inputV===customers[i].number){
+                name=customers[i].name;
+                $(".placeOrder-inp-03").val(name);
+                console.log(name);
+                break;
+            }else {
+                $(".placeOrder-inp-03").val("");
+            }
+        }
+    });
+});
+
+
+
+
+
+
