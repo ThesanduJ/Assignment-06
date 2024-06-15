@@ -248,7 +248,7 @@
     position: absolute;
     top: 27vh;
     width: 20vw;
-    height: 52vh;
+    height: 55vh;
     right: 10vw;
     border: black 1px solid;
     border-radius: 10px;
@@ -336,7 +336,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 44vh;
+    top: 49vh;
 }
 /*#placeOrder-btnPurchase{*/
 /*    width: fit-content;*/
@@ -356,6 +356,4 @@
 /*    bottom: 1vh;*/
 /*    margin: auto;*/
 /*}*/
-#placeOrder-group{
-    position: relative;
-}
+
