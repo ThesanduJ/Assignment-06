@@ -175,26 +175,35 @@ function loadTable() {
 }
 
 $("#placeOrder-btnPurchase").on('click', () => {
-    var orderId=$('.placeOrder-inp-01').val();
-    var customerName= $('.placeOrder-inp-03').val();
-    var itemCode= $('.placeOrder-inp-04').val();
-    var qty= $('.placeOrder-inp-06').val();
-    var orderDate= $('.placeOrder-inp').val();
-    var totalPrice= $('#total').val();
-    var PaidPrice= $('.placeOrder-inp-12').val();
+    var orderId = $('.placeOrder-inp-01').val();
+    var customerName = $('.placeOrder-inp-03').val();
+    var itemCode = $('.placeOrder-inp-04').val();
+    var qty = $('.placeOrder-inp-06').val();
+    var orderDate = $('.placeOrder-inp').val();
+    var totalPrice = $('#total').val();
+    var PaidPrice = $('.placeOrder-inp-12').val();
 
-    let orders1={
-        orderId:orderId,
-        customerName:customerName,
-        itemCode:itemCode,
-        quantity:qty,
-        orderDate:orderDate,
-        totalPrice:totalPrice,
-        paidPrice:PaidPrice
+    let orders1 = {
+        orderId: orderId,
+        customerName: customerName,
+        itemCode: itemCode,
+        quantity: qty,
+        orderDate: orderDate,
+        totalPrice: totalPrice,
+        paidPrice: PaidPrice
     }
     orders.push(orders1);
     loadTable();
 });
+$("#placeOrder-btnRemove").on('click', () => {
+    $('.placeOrder-inp-04').val("");
+    $('#total').val("");
+    $('.placeOrder-inp-11').val("");
+    $('.placeOrder-inp-12').val("");
+    $('.placeOrder-inp-13').val("");
+    $('#sub-total').val("");
+
+})
 
 
 
