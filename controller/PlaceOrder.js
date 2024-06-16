@@ -197,6 +197,8 @@ $("#placeOrder-btnPurchase").on('click', () => {
 });
 $("#placeOrder-btnRemove").on('click', () => {
     $('.placeOrder-inp-04').val("");
+    $('.placeOrder-inp-05').val("");
+    $('.placeOrder-inp-06').val("");
     $('#total').val("");
     $('.placeOrder-inp-11').val("");
     $('.placeOrder-inp-12').val("");
